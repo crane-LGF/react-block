@@ -3,16 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 
 
-class App extends React.Component {
-  render() {
-    return <header>
-      <div>
-      <h2>Hi, I am a Car!<code>code</code></h2>
-      <h2>h2</h2>
-      </div>
-    </header>;
-  }
-}
+// class App extends React.Component {
+//   render() {
+//     return <header>
+//       <div>
+//       <h2>Hi, I am a Car!<code>code</code></h2>
+//       <h2>h2</h2>
+//       </div>
+//     </header>;
+//   }
+// }
 
 // function App() {
 
@@ -44,5 +44,16 @@ class App extends React.Component {
 //     </div>
 //   );
 // }
+
+function App() {
+
+  const [count, setCount] = useState(0);
+
+  return (
+    <div key="nihao" onClick={() => setCount(count+1)}>
+      {count}
+    </div>
+  );
+}
 
 export default App;
